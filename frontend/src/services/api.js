@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://fullstackproject-bloomtasks.onrender.com' });
+const API = axios.create({ baseURL: 'https://fullstackproject-bloomtasks.onrender.com/api' });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
